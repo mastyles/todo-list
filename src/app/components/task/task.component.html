@@ -1,0 +1,3 @@
+<app-add-task (addTaskEmitter)="addTask($event)"></app-add-task>
+<h6 class="card-subtitle mb-2 text-muted ps-3"><em>Double click on a task to toggle it's reminder.</em></h6>
+<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteEmitter)="deleteTask(task)" (onTaskReminderEmitter)="toggleReminder(task)"></app-task-item>

@@ -1,0 +1,12 @@
+<div class="row bg-task-item m-3 p-2" [ngClass]="{ reminderOn: task.reminder }" (dblclick)="toggleReminder(task)">
+
+  <div class="d-flex justify-content-between">
+    <span class="no-text-selection">{{ task.text }}</span>
+    <span class="cursor-pointer"><fa-icon [icon]="faTimes" [ngStyle]="{ 'color': 'red', 'cursor': 'pointer' }" (click)="onDelete(task)"></fa-icon></span>
+  </div>
+  <span class="no-text-selection">{{ task.day }}</span>
+  <span class="no-text-selection">Reminder: {{ task.reminder ? 'On' : 'Off'}}</span>
+
+</div>
+
+
