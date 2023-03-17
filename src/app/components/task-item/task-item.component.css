@@ -1,0 +1,16 @@
+.bg-task-item {
+  background-color: #d9d7db;
+}
+
+.reminderOn{
+  border-left: 5px solid green;
+}
+
+span.no-text-selection {
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+

@@ -1,0 +1,11 @@
+###
+GET http://localhost:5000/sample_tasks
+
+###
+put http://localhost:5000/sample_tasks/1
+
+Content-Type: application/json
+
+{
+  'reminder': false
+}
